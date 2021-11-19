@@ -1,4 +1,4 @@
-package org.github.cleberGraciano.clientes.rest;
+package org.github.cleberGraciano.clientes.rest.exception;
 
 
 import org.github.cleberGraciano.clientes.rest.exception.ApiErrors;

@@ -1,0 +1,10 @@
+
+J
+java:S3740 "/Provide the parametrized type for this generic.(‚ÒÂ¶þÿÿÿÿ
+Q
+java:S3740$"/Provide the parametrized type for this generic.(Ä»Ò¼üÿÿÿÿ8×ÿÿ«Ò/
+y
+java:S1612"^Replace this lambda with method reference 'DefaultMessageSourceResolvable::getDefaultMessage'.(¿½šæþÿÿÿÿ
+q
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(¸™†‡8ÄÐÑÉÒ/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½…ÐÝøÿÿÿÿ

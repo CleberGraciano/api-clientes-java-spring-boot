@@ -18,7 +18,7 @@ public class Servico {
 
     @ManyToOne
     @JoinColumn(name = "id_cliente")
-    private Cliente cliente; //Muitos Serviços para um cliente
+    private Cliente cliente; //Muitos Serviços para um cliente'
 
     @Column
     private BigDecimal valor;
