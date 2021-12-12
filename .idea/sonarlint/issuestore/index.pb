@@ -13,8 +13,6 @@ Vsrc/main/java/org/github/cleberGraciano/clientes/config/InternacionalizacaoConf
 Qsrc/main/java/org/github/cleberGraciano/clientes/rest/dto/ServicoPrestadoDto.java,5\d\5dfa9eacc13a14f203b4b2a477bd5f0ee2df1b90
 É
 Ssrc/main/java/org/github/cleberGraciano/clientes/model/services/ClienteService.java,c\6\c6098410c968797ed5545dfca47885dccf9dce5b
-Ö
-Usrc/main/java/org/github/cleberGraciano/clientes/rest/Servi√ßoPrestadoController.java,9\0\90f8fbff2e8743a3e6571fb1a139dd4c05d61a4f
 Ç
 Rsrc/main/java/org/github/cleberGraciano/clientes/model/entity/ServicoPrestado.java,4\5\45daa7b3797a6e628f601bb25c296e96d3c8876b
 ã
@@ -25,13 +23,9 @@ z
 Jsrc/main/java/org/github/cleberGraciano/clientes/model/entity/Cliente.java,0\9\092a23afd357ffadd58fddcc85bccd2cbd839a3d
 ê
 `src/main/java/org/github/cleberGraciano/clientes/model/repository/ServicoPrestadoRepository.java,b\6\b6bff02ada3969be4fca20a099256291c78f4189
-|
-Lsrc/main/java/org/github/cleberGraciano/clientes/rest/ClienteController.java,e\5\e5ba5e78ba41453018dce2e6635993056c2069d0
 z
 Jsrc/main/java/org/github/cleberGraciano/clientes/model/entity/Usuario.java,4\4\448c83e70e01aa11747d7d62e1b4c1654aa791f1
 à
 Xsrc/main/java/org/github/cleberGraciano/clientes/model/repository/UsuarioRepository.java,b\f\bf4857b55ad2d342118c7453cfaeb6906f8e5083
-|
-Lsrc/main/java/org/github/cleberGraciano/clientes/rest/UsuarioController.java,a\f\af8b487816128f80ff601af7c0b3a78ffbee0070
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec

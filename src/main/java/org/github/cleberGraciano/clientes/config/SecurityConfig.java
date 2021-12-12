@@ -30,8 +30,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-           .csrf().disable()
-           .cors()
+           .csrf().disable()// desabilitando a autenticação para aplicação web(Timyleaf)
+           .cors() // ativando o cors da aplicação
         .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
     }
