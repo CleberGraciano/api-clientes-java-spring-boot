@@ -25,8 +25,6 @@ Tsrc/main/java/org/github/cleberGraciano/clientes/rest/ServicoPrestadoController
 Qsrc/main/java/org/github/cleberGraciano/clientes/rest/dto/ServicoPrestadoDto.java,5\d\5dfa9eacc13a14f203b4b2a477bd5f0ee2df1b90
 ˆ
 Xsrc/main/java/org/github/cleberGraciano/clientes/model/repository/UsuarioRepository.java,b\f\bf4857b55ad2d342118c7453cfaeb6906f8e5083
-†
-Vsrc/main/java/org/github/cleberGraciano/clientes/config/AuthorizationServerConfig.java,6\c\6cd066b3ef9eb173731587b04ca3f65c15f63ccf
 „
 Tsrc/main/java/org/github/cleberGraciano/clientes/model/entity/enuns/TipoUsuario.java,e\2\e241e31ed4ed0b2b8f130d1a480fde5bde0bd765
 z
