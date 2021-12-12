@@ -2,6 +2,7 @@ package org.github.cleberGraciano.clientes.model.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.github.cleberGraciano.clientes.model.entity.enuns.TipoUsuario;
 
 import javax.persistence.*;
 
@@ -18,4 +19,6 @@ public class Usuario {
 
     @Column(name = "senha")
     private String password;
+    
+    private TipoUsuario tipoUsuario;
 }

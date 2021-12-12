@@ -1,7 +1,7 @@
 package org.github.cleberGraciano.clientes.rest;
 
 import org.github.cleberGraciano.clientes.model.entity.Cliente;
-import org.github.cleberGraciano.clientes.model.services.ClienteService;
+import org.github.cleberGraciano.clientes.services.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

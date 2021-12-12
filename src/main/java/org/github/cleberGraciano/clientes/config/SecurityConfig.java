@@ -1,5 +1,7 @@
 package org.github.cleberGraciano.clientes.config;
 
+import org.github.cleberGraciano.clientes.services.UsuarioDetailService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -16,13 +18,14 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
+    @Autowired
+    private UsuarioDetailService usuarioDetailService;
+
     @Override
     public void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
-            .inMemoryAuthentication()
-                .withUser("fulano")
-                .password("123456")
-                .roles("USER");
+                .userDetailsService(usuarioDetailService)
+                .passwordEncoder(passwordEncoder());
     }
 
     @Bean

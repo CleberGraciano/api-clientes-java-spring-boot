@@ -1,6 +1,5 @@
-package org.github.cleberGraciano.clientes.model.services;
+package org.github.cleberGraciano.clientes.services;
 
-import ch.qos.logback.core.net.server.Client;
 import org.github.cleberGraciano.clientes.model.entity.Cliente;
 import org.github.cleberGraciano.clientes.model.repository.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;

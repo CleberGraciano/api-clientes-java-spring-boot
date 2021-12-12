@@ -2,7 +2,7 @@ package org.github.cleberGraciano.clientes.rest;
 
 import lombok.RequiredArgsConstructor;
 import org.github.cleberGraciano.clientes.model.entity.ServicoPrestado;
-import org.github.cleberGraciano.clientes.model.services.ServicoPrestadoService;
+import org.github.cleberGraciano.clientes.services.ServicoPrestadoService;
 import org.github.cleberGraciano.clientes.rest.dto.ServicoPrestadoDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/v1/services-provided")
-public class ServiçoPrestadoController {
+public class ServicoPrestadoController {
 
     private final ServicoPrestadoService servicoPrestadoService;
 

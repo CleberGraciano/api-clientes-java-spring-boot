@@ -1,4 +1,4 @@
-package org.github.cleberGraciano.clientes.model.services;
+package org.github.cleberGraciano.clientes.services;
 
 import lombok.RequiredArgsConstructor;
 import org.github.cleberGraciano.clientes.model.entity.Cliente;
@@ -7,7 +7,6 @@ import org.github.cleberGraciano.clientes.model.repository.ClienteRepository;
 import org.github.cleberGraciano.clientes.model.repository.ServicoPrestadoRepository;
 import org.github.cleberGraciano.clientes.rest.dto.ServicoPrestadoDto;
 import org.github.cleberGraciano.clientes.util.BigDecimalConverter;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
@@ -15,7 +14,6 @@ import org.springframework.web.server.ResponseStatusException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
