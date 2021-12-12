@@ -10,6 +10,7 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 
+//Arquivo de configurações WEB
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
