@@ -17,7 +17,6 @@ public class ServiçoPrestadoController {
 
     private final ServicoPrestadoService servicoPrestadoService;
 
-
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public ServicoPrestado salvarServico(@RequestBody @Valid ServicoPrestadoDto servicoPrestadoDto){
