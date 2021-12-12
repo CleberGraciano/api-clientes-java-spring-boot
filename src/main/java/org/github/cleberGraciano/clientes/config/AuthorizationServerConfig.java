@@ -30,6 +30,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .authenticationManager(authenticationManager);
     }
 
+    //Libera acesso para os clientes que iram usar a API
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients
