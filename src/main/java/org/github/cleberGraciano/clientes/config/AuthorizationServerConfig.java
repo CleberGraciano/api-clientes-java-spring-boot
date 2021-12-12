@@ -15,11 +15,16 @@ import org.springframework.security.oauth2.provider.token.store.InMemoryTokenSto
 @EnableAuthorizationServer
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
 
-    @Autowired
+
     private AuthenticationManager authenticationManager;
 
+    @Autowired
+    public AuthorizationServerConfig(AuthenticationManager authenticationManager) {
+        this.authenticationManager = authenticationManager;
+    }
+
     @Bean
-    private TokenStore tokenStore(){
+    public TokenStore tokenStore(){
         return new InMemoryTokenStore(); //Gerar Token em memorias, não temos nada feito para gerar token gera token deixa em memoria para usar
     }
 

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/api/usuarios")
+@RequestMapping("/v1/users")
 public class UsuarioController {
 
     private final UsuarioRepository usuarioRepository;
