@@ -1,7 +1,6 @@
-package org.github.cleberGraciano.clientes.rest.exception;
+package org.github.cleberGraciano.clientes.exception;
 
 
-import org.github.cleberGraciano.clientes.rest.exception.ApiErrors;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;

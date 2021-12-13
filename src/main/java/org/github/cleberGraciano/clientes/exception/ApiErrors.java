@@ -1,4 +1,4 @@
-package org.github.cleberGraciano.clientes.rest.exception;
+package org.github.cleberGraciano.clientes.exception;
 
 import lombok.Getter;
 

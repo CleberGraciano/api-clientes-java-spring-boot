@@ -1,5 +1,6 @@
 package org.github.cleberGraciano.clientes.services;
 
+import org.github.cleberGraciano.clientes.exception.ClienteNaoEncontradoException;
 import org.github.cleberGraciano.clientes.model.entity.Cliente;
 import org.github.cleberGraciano.clientes.model.repository.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,7 +39,7 @@ public class ClienteService {
                     repository.delete(cliente);
                     return Void.TYPE;
                 })
-                .orElseThrow(()->new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encontrado"));
+                .orElseThrow(()-> new ClienteNaoEncontradoException(id));
     }
 
     public void atualizarCliente(Cliente clienteAtualizado, Integer id){
@@ -46,7 +47,7 @@ public class ClienteService {
             cliente.setNome(clienteAtualizado.getNome());
             cliente.setCpf(clienteAtualizado.getCpf());
            return repository.save(cliente);
-        }).orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encontrado"));
+        }).orElseThrow(()-> new ClienteNaoEncontradoException(id));
     }
 
 }

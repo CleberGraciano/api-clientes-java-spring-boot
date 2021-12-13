@@ -1,5 +1,6 @@
-package org.github.cleberGraciano.clientes.rest;
+package org.github.cleberGraciano.clientes.rest.controller;
 
+import org.github.cleberGraciano.clientes.exception.ClienteNaoEncontradoException;
 import org.github.cleberGraciano.clientes.model.entity.Cliente;
 import org.github.cleberGraciano.clientes.services.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,13 +44,32 @@ public class ClienteController {
     @DeleteMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deletarClientePorId(@PathVariable Integer id){
-        clienteService.deletarCliente(id);
+        try {
+
+            clienteService.deletarCliente(id);
+
+        } catch (ClienteNaoEncontradoException ex){
+
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, ex.getMessage());
+
+        }
+
     }
 
     @PutMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void atualizarCliente(@Valid @RequestBody Cliente cliente, @PathVariable Integer id){
-        clienteService.atualizarCliente(cliente, id);
+        try {
+
+            clienteService.atualizarCliente(cliente, id);
+
+        } catch (ClienteNaoEncontradoException ex){
+
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, ex.getMessage());
+
+        }
+
+
     }
 
 

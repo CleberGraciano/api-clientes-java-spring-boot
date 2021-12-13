@@ -1,5 +1,6 @@
 package org.github.cleberGraciano.clientes.services;
 
+import org.github.cleberGraciano.clientes.exception.UsuarioCadastradoException;
 import org.github.cleberGraciano.clientes.model.entity.Usuario;
 import org.github.cleberGraciano.clientes.model.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,5 +30,13 @@ public class UsuarioDetailService implements UserDetailsService {
                 .username(usuario.getUsername())
                 .password(usuario.getPassword())
                 .roles(usuario.getTipoUsuario().toString()).build();
+    }
+
+    public Usuario salvar(Usuario usuario) {
+        boolean exists = usuarioRepository.existsByUsername(usuario.getUsername());
+        if (exists){
+            throw new UsuarioCadastradoException(usuario.getUsername());
+        }
+        return usuarioRepository.save(usuario);
     }
 }

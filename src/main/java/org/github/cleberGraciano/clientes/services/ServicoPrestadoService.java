@@ -1,6 +1,7 @@
 package org.github.cleberGraciano.clientes.services;
 
 import lombok.RequiredArgsConstructor;
+import org.github.cleberGraciano.clientes.exception.ClienteNaoEncontradoException;
 import org.github.cleberGraciano.clientes.model.entity.Cliente;
 import org.github.cleberGraciano.clientes.model.entity.ServicoPrestado;
 import org.github.cleberGraciano.clientes.model.repository.ClienteRepository;
@@ -30,7 +31,7 @@ public class ServicoPrestadoService {
         Cliente cliente =
                 clienteRepository
                         .findById(idCliente)
-                        .orElseThrow(() -> new ResponseStatusException(HttpStatus.BAD_REQUEST, "Cliente inexistente"));
+                        .orElseThrow(() -> new ClienteNaoEncontradoException(idCliente));
 
         ServicoPrestado servicoPrestado = new ServicoPrestado();
         servicoPrestado.setDescricao(dto.getDescricao());

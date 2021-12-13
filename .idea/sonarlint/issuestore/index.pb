@@ -19,13 +19,7 @@ Jsrc/main/java/org/github/cleberGraciano/clientes/model/entity/Cliente.java,0\9
 Vsrc/main/java/org/github/cleberGraciano/clientes/config/InternacionalizacaoConfig.java,8\6\866a10c1be2d8a017a24f1aa490d71eb50c9252f
 y
 Isrc/main/java/org/github/cleberGraciano/clientes/ClientesApplication.java,a\1\a12968b5bf9c1521c41cab485ec7253d63334503
-Ñ
-Tsrc/main/java/org/github/cleberGraciano/clientes/rest/ServicoPrestadoController.java,5\4\5432959d1a7426c1e20ec6a80d87615921de6e2f
 Å
 Qsrc/main/java/org/github/cleberGraciano/clientes/rest/dto/ServicoPrestadoDto.java,5\d\5dfa9eacc13a14f203b4b2a477bd5f0ee2df1b90
-à
-Xsrc/main/java/org/github/cleberGraciano/clientes/model/repository/UsuarioRepository.java,b\f\bf4857b55ad2d342118c7453cfaeb6906f8e5083
 Ñ
 Tsrc/main/java/org/github/cleberGraciano/clientes/model/entity/enuns/TipoUsuario.java,e\2\e241e31ed4ed0b2b8f130d1a480fde5bde0bd765
-z
-Jsrc/main/java/org/github/cleberGraciano/clientes/model/entity/Usuario.java,4\4\448c83e70e01aa11747d7d62e1b4c1654aa791f1
